@@ -19,10 +19,37 @@
                 <groupId>com.subra.mvn.plugn</groupId>
                 <artifactId>first-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
-                <configuration>
+                <!-- before <configuration>
                     <message>${input}</message>
                     <message5>${input}TT</message5>
-                </configuration>
+                </configuration> -->
+                <!-- below is after -->
+
+                <executions>
+                  <execution>
+                      <id>ab1</id>
+                      <goals>
+                          <goal>hello</goal>
+                      </goals>
+                      <phase>compile</phase>
+                    <configuration>
+                        <message>1..........${input}...compile phase</message>
+                      <!--  <message5>${input}TT</message5>-->
+                    </configuration>
+                  </execution>
+                    <execution>
+                        <id>cd2</id>
+                        <goals>
+                            <goal>other</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <counry>2..........Abu Dhabi package phase ...</counry>
+                        </configuration>
+                    </execution>
+
+                </executions>
+
             </plugin>
         </plugins>
     </build>

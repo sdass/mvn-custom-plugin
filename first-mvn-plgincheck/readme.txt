@@ -53,4 +53,47 @@ build with version number 1.0.1, etc., instead of snapshot until figure out wher
 intellij GUI is caching the plugin jar from. Minor because cmdline works.
 Plugins->first->* does not show newer one unless version changed.
 
+---Advance use---------------------------Next level ------
+execution, multiple goal
+http://www.avajava.com/tutorials/lessons/how-do-i-specify-the-phase-of-a-lifecycle-in-a-mojo.html
+Multiple goals (2) with Executions elements and id. mvn install itself  executes
+all goals
+log shows:
+[INFO] Hello 1..........arbitrary...compile phase
+[INFO] Belongs to 2..........Abu Dhabi package phase ...
+pom <build> element
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.subra.mvn.plugn</groupId>
+                <artifactId>first-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                  <execution>
+                      <id>ab1</id>
+                      <goals>
+                          <goal>hello</goal>
+                      </goals>
+                      <phase>compile</phase>
+                    <configuration>
+                        <message>1..........${input}...compile phase</message>
+                      <!--  <message5>${input}TT</message5>-->
+                    </configuration>
+                  </execution>
+                    <execution>
+                        <id>cd2</id>
+                        <goals>
+                            <goal>other</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <counry>2..........Abu Dhabi package phase ...</counry>
+                        </configuration>
+                    </execution>
+
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
