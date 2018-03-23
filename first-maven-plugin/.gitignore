@@ -1,0 +1,95 @@
+From: "Saved by Internet Explorer 11"
+Subject: 
+Date: Fri, 23 Mar 2018 14:03:49 -0400
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://raw.githubusercontent.com/github/gitignore/master/Global/JetBrains.gitignore
+X-MimeOLE: Produced By Microsoft MimeOLE V6.3.9600.18939
+
+=EF=BB=BF<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content=3D"IE=3D11.0000"=20
+http-equiv=3D"X-UA-Compatible">
+
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8">
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.18953"></HEAD>
+<BODY>
+<PRE># Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, =
+PyCharm, CLion, Android Studio and WebStorm=0A=
+# Reference: =
+https://intellij-support.jetbrains.com/hc/en-us/articles/206544839=0A=
+=0A=
+# User-specific stuff:=0A=
+.idea/
+.idea/**/workspace.xml=0A=
+.idea/**/tasks.xml=0A=
+.idea/dictionaries=0A=
+=0A=
+# Sensitive or high-churn files:=0A=
+.idea/**/dataSources/=0A=
+.idea/**/dataSources.ids=0A=
+.idea/**/dataSources.local.xml=0A=
+.idea/**/sqlDataSources.xml=0A=
+.idea/**/dynamic.xml=0A=
+.idea/**/uiDesigner.xml=0A=
+=0A=
+# Gradle:=0A=
+.idea/**/gradle.xml=0A=
+.idea/**/libraries=0A=
+=0A=
+# CMake=0A=
+cmake-build-debug/=0A=
+cmake-build-release/=0A=
+=0A=
+# Mongo Explorer plugin:=0A=
+.idea/**/mongoSettings.xml=0A=
+=0A=
+## File-based project format:=0A=
+*.iws=0A=
+=0A=
+## Plugin-specific files:=0A=
+=0A=
+# IntelliJ=0A=
+out/=0A=
+=0A=
+# mpeltonen/sbt-idea plugin=0A=
+.idea_modules/=0A=
+=0A=
+# JIRA plugin=0A=
+atlassian-ide-plugin.xml=0A=
+=0A=
+# Cursive Clojure plugin=0A=
+.idea/replstate.xml=0A=
+=0A=
+# Crashlytics plugin (for Android Studio and IntelliJ)=0A=
+com_crashlytics_export_strings.xml=0A=
+crashlytics.properties=0A=
+crashlytics-build.properties=0A=
+fabric.properties=0A=
+</PRE></BODY></HTML>
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
